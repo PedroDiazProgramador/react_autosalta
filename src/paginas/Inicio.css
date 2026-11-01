@@ -1,0 +1,36 @@
+
+.banner-inicio {
+  min-height: 420px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  padding: 60px 20px;
+}
+
+/* Oscurecer ligeramente el banner */
+.banner-inicio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Mantener el texto por encima del fondo */
+.banner-inicio .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 768px) {
+  .banner-inicio {
+    min-height: 300px;
+  }
+
+  .banner-inicio h1 {
+    font-size: 2rem;
+  }
+}
