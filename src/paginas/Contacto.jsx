@@ -17,7 +17,7 @@ function Contacto() {
 
     try {
       //congiguracion de credenciales  
-      await emailjs.sendForm( "service_kl1gpro","template_9wofvk", formulario.current,
+      await emailjs.sendForm( "service_kl1gpro","template_9wofvk9", formulario.current,
         {
           publicKey: "lojkDIGcFoYRegeQ_"
         }

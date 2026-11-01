@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router";
+// import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 
 import Encabezado from './componentes/Encabezado'
 import PiePagina from './componentes/PiePagina';
@@ -14,7 +15,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Encabezado />
 
         <main>
@@ -28,7 +29,7 @@ function App() {
         </main>
 
         <PiePagina />
-      </BrowserRouter>
+      </HashRouter>
 
     </>
   )
